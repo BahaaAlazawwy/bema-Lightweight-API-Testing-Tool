@@ -292,38 +292,6 @@ Open a feature request here →
 https://github.com/BahaaAlazawwy/bema-Lightweight-API-Testing-Tool/issues/new
 ---
 
-## 🤝 Contributing
-
-Contributions are what make open source great. All contributions are welcome — bug fixes, new features, documentation improvements, and design suggestions.
-
-### Getting started
-
-1. **Fork** the repository
-2. **Clone** your fork
-   ```bash
-   git clone https://github.com/your-username/bema.git
-   ```
-3. **Create a branch** for your change
-   ```bash
-   git checkout -b feature/your-feature-name
-   ```
-4. **Make your changes** and commit
-   ```bash
-   git commit -m "feat: add your feature"
-   ```
-5. **Push** to your fork
-   ```bash
-   git push origin feature/your-feature-name
-   ```
-6. **Open a Pull Request** against `main`
-
-### Guidelines
-
-- Follow the existing code style (React functional components, Tailwind utility classes, CSS variables for theming)
-- Keep PRs focused — one feature or fix per PR
-- Add a clear description of what your PR does and why
-- Test your changes in both light and dark mode
-- If you're adding a new panel or feature, follow the existing component structure
 
 ### Reporting bugs
 
