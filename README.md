@@ -1,187 +1,176 @@
-⚡ Bema
 
-A fast and lightweight alternative to Postman for testing APIs.
+---
 
-[License: MIT] [React] [Vite] [TailwindCSS] [Node.js]
+# ✨ Features
 
-Bema is a modern, developer-focused API testing tool that runs entirely
-in your browser.
-Send requests, inspect responses, run automated multi-method tests, and
-discover hidden endpoints — all without the bloat of heavy desktop
-applications.
+## ⚡ Request Builder
 
-------------------------------------------------------------------------
+- Send **GET, POST, PUT, PATCH, DELETE**
+- Query Params editor
+- Headers editor
+- Request Body editor
+- `Ctrl + Enter` shortcut
 
-🚀 Why Bema?
+---
 
-Most API tools today are heavy and slow.
+## 🧠 Response Viewer
 
-Bema focuses on:
+- JSON syntax highlighting
+- Response status badge
+- Response time
+- Response headers
+- Copy response button
 
--   ⚡ Speed
--   🧠 Smart testing
--   🧩 Simplicity
--   🪶 Lightweight architecture
+---
 
-                       Bema      Postman
-  -------------------- --------- --------------
-  Startup time         Instant   5–15 seconds
-  Install size         ~5 MB     ~250 MB
-  Smart API Test       ✅        ❌
-  Endpoint Discovery   ✅        ❌
-  Open Source          ✅        ❌
+## 🧪 Smart API Testing
 
-------------------------------------------------------------------------
+Automatically tests all HTTP methods.
 
-✨ Features
+Example:
 
-⚡ Request Builder
 
--   Send GET, POST, PUT, PATCH, DELETE
--   Query params editor
--   Headers editor
--   Request body editor
--   Keyboard shortcut Ctrl + Enter
+GET 200 OK 112ms
+POST 401 98ms
+PUT 404 105ms
+PATCH 404 101ms
+DELETE 405 94ms
 
-------------------------------------------------------------------------
 
-🧠 Response Viewer
+---
 
--   JSON syntax highlighting
--   Response status badge
--   Response time
--   Response headers
--   Copy response button
+## 🔎 Endpoint Discovery
 
-------------------------------------------------------------------------
+Scans common API endpoints like:
 
-🧪 Smart API Testing
 
-Automatically tests multiple HTTP methods at once.
+/users
+/login
+/admin
+/products
+/health
 
-Example result:
 
-GET 200 OK 112ms POST 401 98ms PUT 404 105ms PATCH 404 101ms DELETE 405
-94ms
+Shows:
 
-------------------------------------------------------------------------
+- Status code
+- Response time
+- Working endpoints
 
-🔎 Endpoint Discovery
+---
 
-Automatically scans common API endpoints like:
+## 💾 Collections & History
 
-/users /login /admin /products /health /status
+- Save requests
+- Request history
+- Reload saved requests
+- Clear history
 
-Shows: - Status code - Response time - Working endpoints
+All data stored in **localStorage**.
 
-------------------------------------------------------------------------
+---
 
-💾 Collections & History
+# 🛠 Tech Stack
 
--   Save requests
--   Request history
--   Reload saved requests
--   Clear history
+## Frontend
 
-All data saved in localStorage.
+- React
+- Vite
+- TailwindCSS
+- Axios
 
-------------------------------------------------------------------------
+## Backend
 
-🛠 Tech Stack
+- Node.js
+- Express
+- CORS
+- Axios
 
-Frontend - React - Vite - TailwindCSS - Axios
+---
 
-Backend - Node.js - Express - Axios - CORS
+# 📦 Installation
 
-------------------------------------------------------------------------
+## Clone repository
 
-📦 Installation
-
-1 Clone repository
-
-git clone
-https://github.com/BahaaAlazawwy/bema-Lightweight-API-Testing-Tool.git
+```bash
+git clone https://github.com/BahaaAlazawwy/bema-Lightweight-API-Testing-Tool.git
 cd bema-Lightweight-API-Testing-Tool
+Install backend
+cd backend
+npm install
+Install frontend
+cd ../frontend
+npm install
+Run backend
+npm run dev
 
-2 Install backend
+Backend:
 
-cd backend npm install
+http://localhost:3001
+Run frontend
 
-3 Install frontend
+Open second terminal:
 
-cd ../frontend npm install
+cd frontend
+npm run dev
 
-4 Start backend
+Frontend:
 
-cd backend npm run dev
-
-Backend runs on: http://localhost:3001
-
-5 Start frontend
-
-cd frontend npm run dev
-
-Frontend runs on: http://localhost:5173
-
-6 Open the app in browser http://localhost:5173
-
-------------------------------------------------------------------------
-
+http://localhost:5173
 🧪 Example Usage
 
-Send request: GET https://jsonplaceholder.typicode.com/posts/1
+Send request
 
-Smart Test: https://jsonplaceholder.typicode.com/posts
+GET https://jsonplaceholder.typicode.com/posts/1
 
-Endpoint Discovery: https://jsonplaceholder.typicode.com
+Smart Test
 
-------------------------------------------------------------------------
+https://jsonplaceholder.typicode.com/posts
 
+Endpoint Discovery
+
+https://jsonplaceholder.typicode.com
 🏗 Project Structure
-
-bema │ ├ backend │ ├ server.js │ └ routes │ ├ frontend │ ├ src │ ├
-components │ └ hooks │ └ README.md
-
-------------------------------------------------------------------------
-
+bema
+│
+├ backend
+│ ├ server.js
+│ └ routes
+│
+├ frontend
+│ ├ src
+│ ├ components
+│ └ hooks
+│
+└ README.md
 🗺 Roadmap
 
 Planned features:
 
--   Authentication helpers
--   Environment variables
--   Request chaining
--   Postman collection import
--   GraphQL support
--   WebSocket testing
--   Code generation
--   CLI testing mode
-
-------------------------------------------------------------------------
-
+Authentication helpers
+Environment variables
+Request chaining
+Postman collection import
+GraphQL support
+WebSocket testing
+Code generation
+CLI testing mode
 🤝 Contributing
 
-1 Fork the repository
+1 Fork repository
 
-2 Clone your fork git clone
-https://github.com/your-username/bema-Lightweight-API-Testing-Tool.git
+2 Clone fork
 
-3 Create branch git checkout -b feature/new-feature
+git clone https://github.com/your-username/bema-Lightweight-API-Testing-Tool.git
 
-4 Commit changes git commit -m “feat: add new feature”
+3 Create branch
 
-5 Push git push origin feature/new-feature
+git checkout -b feature/new-feature
 
-6 Open Pull Request
+4 Commit
 
-------------------------------------------------------------------------
+git commit -m "feat: add new feature"
 
-📄 License
+5 Push
 
-MIT License
-
-------------------------------------------------------------------------
-
-Built with ❤️ by developers.
-
-⭐ Star the project if you like it.
+git push origin feature/new-feature
