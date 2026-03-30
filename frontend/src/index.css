@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * { box-sizing: border-box; }
+
+  html, body, #root {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* ── Light mode (default) ── */
+  :root {
+    --bg-app:        #f0f2f5;
+    --bg-panel:      #ffffff;
+    --bg-input:      #f5f6f8;
+    --bg-hover:      rgba(0, 0, 0, 0.04);
+    --border:        rgba(0, 0, 0, 0.08);
+    --text-primary:  #111827;
+    --text-secondary:#4b5563;
+    --text-muted:    #9ca3af;
+    --text-active:   #111827;
+    --shadow:        0 1px 3px rgba(0,0,0,0.08);
+  }
+
+  /* ── Dark mode ── */
+  html.dark {
+    --bg-app:        #0f1114;
+    --bg-panel:      #16181d;
+    --bg-input:      #1e2027;
+    --bg-hover:      rgba(255, 255, 255, 0.05);
+    --border:        rgba(255, 255, 255, 0.06);
+    --text-primary:  #f3f4f6;
+    --text-secondary:#9ca3af;
+    --text-muted:    #4b5563;
+    --text-active:   #ffffff;
+    --shadow:        0 1px 3px rgba(0,0,0,0.4);
+  }
+
+  body {
+    @apply font-sans;
+    background-color: var(--bg-app);
+    color: var(--text-primary);
+    -webkit-font-smoothing: antialiased;
+    transition: background-color 0.15s, color 0.15s;
+  }
+}
+
+/* ── Themed utility classes ── */
+.bg-app   { background-color: var(--bg-app);   }
+.bg-panel { background-color: var(--bg-panel); }
+.bg-input { background-color: var(--bg-input); }
+
+.t-primary   { color: var(--text-primary);   }
+.t-secondary { color: var(--text-secondary); }
+.t-muted     { color: var(--text-muted);     }
+.t-active    { color: var(--text-active);    }
+
+.border-theme { border-color: var(--border) !important; }
+
+.hover-item {
+  transition: background-color 0.12s;
+  border-radius: 0.375rem;
+}
+.hover-item:hover { background-color: var(--bg-hover); }
+
+.input-base {
+  background-color: var(--bg-input);
+  color: var(--text-primary);
+  border: 1px solid var(--border);
+  border-radius: 0.375rem;
+  transition: border-color 0.12s;
+  outline: none;
+  font-family: 'JetBrains Mono', monospace;
+}
+.input-base::placeholder { color: var(--text-muted); }
+.input-base:focus { border-color: rgba(99, 102, 241, 0.5); }
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar { width: 5px; height: 5px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 99px; }
+::-webkit-scrollbar-thumb:hover { background: var(--text-muted); }
+
+/* ── Status colors ── */
+.status-2xx { color: #10b981; }
+.status-3xx { color: #3b82f6; }
+.status-4xx { color: #f59e0b; }
+.status-5xx { color: #ef4444; }
