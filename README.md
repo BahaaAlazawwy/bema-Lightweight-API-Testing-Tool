@@ -99,8 +99,6 @@ Endpoint   │ Status │ Time
 
 ## 🖥 Screenshots
 
-> _Add screenshots to the `/screenshots` folder and they will appear here._
-
 | Request Builder | Smart Test Results | Endpoint Discovery |
 |---|---|---|
 | ![Builder](screenshots/builder.png) | ![Smart Test](screenshots/smart-test.png) | ![Discovery](screenshots/discovery.png) |
